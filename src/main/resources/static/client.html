@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/clientScript.js"></script>
+</head>
+<body>
+    
+    <h1>COMPUTER RENT</h1>
+
+    <a href="index.html">BACK TO CATEGORIES</a>
+    <p> </p>
+
+    </p><br/><br/>
+    <h1>CLIENTS</h1>
+    <p>ADD A NEW CLIENT:</p>
+
+    <input type="hidden" id="idClient">
+    <input type="text" id="email" placeholder="E-MAIL">
+    <input type="text" id="password" placeholder="PASSWORD">
+    <input type="text" id="name" placeholder="NAME">
+    <input type="number" id="age" placeholder="AGE">
+    <select id="select-category"></select>
+    
+
+    <button onclick="agregar()" id="btnAgregar">SAVE</button>
+    <button onclick="listar()" id="btnListar">LIST CLIENTS</button>
+    <button onclick="actualizar()" id="btnActualizar">UPDATE</button>
+    <p>
+
+    </p><br/>
+    <div id="listado"></div>
+    <script type="text/javascript"> 
+        window.onload = listar();
+    </script>
+</body>
+</html>

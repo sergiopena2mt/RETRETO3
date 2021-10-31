@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/messagesScript.js"></script>
+</head>
+<body>
+    
+    <h1>COMPUTER RENT</h1>
+
+    <a href="index.html">BACK TO CATEGORIES</a>
+    <p> </p>
+
+    </p><br/><br/>
+    <h1>MESSAGES</h1>
+    <p>ADD A NEW MESSAGE:</p>
+
+    <input type="hidden" id="idMessage">
+    <input type="text" id="messageText" placeholder="MESSAGE">
+    
+
+    <button onclick="agregar()" id="btnAgregar">SAVE</button>
+    <button onclick="listar()" id="btnListar">LIST MESSAGES</button>
+    <button onclick="actualizar()" id="btnActualizar">UPDATE</button>
+    <p>
+
+    </p><br/>
+    <div id="listado"></div>
+    <script type="text/javascript"> 
+        window.onload = listar();
+    </script>
+</body>
+</html>

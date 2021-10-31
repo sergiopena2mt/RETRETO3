@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/ReservationScript.js"></script>
+</head>
+<body>
+    
+    <h1>COMPUTER RENT</h1>
+
+    <a href="index.html">BACK TO CATEGORIES</a>
+    <p> </p>
+
+    </p><br/><br/>
+    <h1>RESERVATIONS</h1>
+    <p>ADD A NEW RESERVATION:</p>
+
+    <input type="hidden" id="idReservation">
+    <input type="date" id="startDate" placeholder="START DATE">
+    <input type="date" id="devolutionDate" placeholder="DEVOLUTION DATE">
+    <input type="text" id="status" placeholder="STATE">
+    <input type="number" id="score" placeholder="SCORE">
+    
+
+    <button onclick="agregar()" id="btnAgregar">SAVE</button>
+    <button onclick="listar()" id="btnListar">LIST RESERVATIONS</button>
+    <button onclick="actualizar()" id="btnActualizar">UPDATE</button>
+    <p>
+
+    </p><br/>
+    <div id="listado"></div>
+    <script type="text/javascript"> 
+        window.onload = listar();
+    </script>
+</body>
+</html>
